@@ -21,7 +21,7 @@ long timeNow = 0;
 #include <Wire.h>
 #include <RTC.h>
 
-static DS1307 RTC;
+static DS3231 RTC;
 
 void setup() {
 
@@ -31,7 +31,7 @@ void setup() {
   Serial.begin(115200);
   //while (!Serial) {
   // wait for serial port to connect. Needed for native USB port only
-  // }
+   //}
   setupRTC();
 
   setupLCD();
